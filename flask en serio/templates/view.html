@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}view all users{% endblock %}
+
+{% block content %}
+{% for item in values %}
+<h1>Lista de usuarios: </h1>
+<p>Name: {{item.name}}, email: {{item.email}}</p>
+{% endfor %}
+{% endblock %}

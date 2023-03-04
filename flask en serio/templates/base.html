@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{margin: 0;
+			padding: 0;
+			background: steelblue;
+			font-family: sans-serif;
+			color: navajowhite;
+
+		}
+	</style>
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+	<center>
+		<h4 style="position: relative;top: 0;left: 0;width: 100vw;height: 4vh;padding-top: 1vh;margin: 0;background: darkorange;color: lightblue;cursor: pointer;" onclick="window.location.href='/'">Benvenue</h4>
+
+		<h3 style="cursor: crosshair;" onclick="window.location.href='/maine'">About (?)</h3>
+	{% block content %}{% endblock %}
+</center>
+</body>
+</html>

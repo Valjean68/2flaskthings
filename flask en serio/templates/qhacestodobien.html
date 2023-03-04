@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}monki man{% endblock %}
+
+{% block content %}
+
+<h2>Q haces todo bien {{usr}} ?</h2>
+
+<h2>Tu meil de ahora es {{mail}}</h2>
+
+<iframe src="https://www.youtube.com/embed/khWXFNLbPOs" style="margin-top: 20vh;"></iframe>
+
+<form method="POST">
+	<input type="mail" name="mail" value="{{mail if mail}}" placeholder="mandale meil">
+	<input type="submit">
+</form>
+
+<h1 style="cursor: cell;" onclick="window.location.href='/logout'">Uitloggen</h1>
+{% endblock %}
